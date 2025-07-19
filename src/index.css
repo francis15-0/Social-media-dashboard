@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+}
+
+.dark{
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+}
+.light{
+    background-color: hsl(225, 100%, 98%);
+}
+
 /* Base styles — for mobile (default) */
 body {
   font-family: Arial, sans-serif;
@@ -13,14 +25,54 @@ header {
   text-align: center;
 }
 
-main {
-  padding: 10px;
-}
-
 .subHeader{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.social-box{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    
+
+}
+
+.box{
+    height: 200px;
+    width: auto;
+    background-color: #007BFF;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username{
+    display: flex;
+
+}
+
+.username > p{
+    font-size: 0.9rem;
+}
+
+.box-content > h1{
+    font-size: 4rem;
+    
+}
+
+.followers{
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+    margin-top: 1em;
 }
 
 /* Medium screens (tablets) */
