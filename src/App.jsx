@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function App() {
   const [dark, setDark] = useState(false);
-
+  document.body.className = dark ? 'dark' : 'light';
   const handleToggle = () => {
     setDark(prev => {
       const newTheme = !prev;
@@ -27,6 +27,8 @@ function App() {
           <Switch checked={dark} onChange={handleToggle} />
         </div>
 
+        </div>
+
         <div className='social-box'>
 
           <div className='box'>
@@ -34,7 +36,7 @@ function App() {
             <div className='box-content'> 
               
               <div className='username'>
-              <img src="./public/images/icon-facebook.svg" alt="facebook" />
+              <img src="/images/icon-facebook.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
               <h1>1987</h1>
@@ -47,12 +49,12 @@ function App() {
             <div className='box-content'> 
               
               <div className='username'>
-              <img src="./public/images/icon-facebook.svg" alt="facebook" />
+              <img src="/images/icon-twitter.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
               <h1>1987</h1>
-              <p>Followers</p>
-              <p>12 Today</p>
+              <p className='followers'>Followers</p>
+              <p className='date'>12 Today</p>
             </div>
           </div>
           <div className='box'>
@@ -60,12 +62,12 @@ function App() {
             <div className='box-content'> 
               
               <div className='username'>
-              <img src="./public/images/icon-facebook.svg" alt="facebook" />
+              <img src="/images/icon-instagram.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
               <h1>1987</h1>
-              <p>Followers</p>
-              <p>12 Today</p>
+              <p className='followers'>Followers</p>
+              <p className='date'>12 Today</p>
             </div>
           </div>
           <div className='box'>
@@ -73,17 +75,18 @@ function App() {
             <div className='box-content'> 
               
               <div className='username'>
-              <img src="./public/images/icon-facebook.svg" alt="facebook" />
+              <img src="/images/icon-youtube.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
               <h1>1987</h1>
-              <p>Followers</p>
-              <p>12 Today</p>
+              <p className='followers'>Followers</p>
+              <p className='date'>12 Today</p>
             </div>
           </div>
+          
         </div>
 
-      </div>
+      
     </>
   )
 }
