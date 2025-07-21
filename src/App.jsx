@@ -52,9 +52,9 @@ function App() {
               <img src="/images/icon-twitter.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
-              <h1>1987</h1>
+              <h1>1044</h1>
               <p className='followers'>Followers</p>
-              <p className='date'>12 Today</p>
+              <p className='date'>99 Today</p>
             </div>
           </div>
           <div className='box'>
@@ -65,9 +65,9 @@ function App() {
               <img src="/images/icon-instagram.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
-              <h1>1987</h1>
+              <h1>11k</h1>
               <p className='followers'>Followers</p>
-              <p className='date'>12 Today</p>
+              <p className='date'>1099 Today</p>
             </div>
           </div>
           <div className='box'>
@@ -78,12 +78,17 @@ function App() {
               <img src="/images/icon-youtube.svg" alt="facebook" />
               <p>@nathanf</p>
               </div>      
-              <h1>1987</h1>
+              <h1>8239</h1>
               <p className='followers'>Followers</p>
-              <p className='date'>12 Today</p>
+              <p className='date'>144 Today</p>
             </div>
           </div>
           
+        </div>
+
+
+        <div className='overview-box'>
+
         </div>
 
       

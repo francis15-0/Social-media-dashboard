@@ -55,15 +55,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.box:nth-of-type(1){
+    border-top: hsl(208, 92%, 53%) 5px solid;
+}
+.box:nth-of-type(2){
+    border-top: hsl(203, 89%, 53%) 5px solid;
+}
+.box:nth-of-type(3){
+    border-top:  solid; /* Set border width */
+    border-image: linear-gradient(to right, #ff6b6b, #4ecdc4) 1;
+}
+.box:nth-of-type(4){
+    border-top: red 5px solid;
 }
 
 .username{
     display: flex;
+    justify-content: center;
+    
 
 }
 
 .username > p{
     font-size: 0.9rem;
+    margin-left: 0.4rem;
 }
 
 .box-content > h1{
@@ -129,6 +147,7 @@ header {
     width: 90%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 
